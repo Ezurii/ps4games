@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly as px
+# import plotly as px
 import numpy as np
 import matplotlib.pyplot as plt
 
