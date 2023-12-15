@@ -5,11 +5,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 st.header(" *Dados de vendas de jogos dentro da plataforma PS4*")
-st.write("""  Essa aplicação tem como intuito de analisar os dados de jogos do ps4. 
-         Como a quantidade de vendas em unidades no periodo do ano que ele foi lançado dentro da plataforma.                            
-            O csv tem 93,7 kbs de tamanho | 712 linhas | 9 colunas de (JOGO, ANO DE LANÇAMENTO, GÊNERO, EDITORA, VENDAS AMERICA DO NORTE, EUROPA, JAPÃO, RESTO DO MUNDO, GLOBAL)
-         
+st.write("""  Essa aplicação tem como intuito de analisar os dados de jogos do ps4.                     
+         Como a quantidade de vendas em milhões de unidades que aquele jogo teve no ano que ele foi lançado dentro do console ps4.
          """)
+st.write("Por exemplo Grand theft auto V foi lançado em 2014 pela Rockstar Games e nessa ano de forma global ele vendeu 19 milhões e 390 mil de unidades.")
+
+st.write(""" 
+    # *Especificações do csv*
+""")
+st.write("O CSV tem 93,7 kbs de tamanho | 712 linhas | 9 colunas de (JOGO, ANO DE LANÇAMENTO, GÊNERO, EDITORA, VENDAS AMERICA DO NORTE, EUROPA, JAPÃO, RESTO DO MUNDO, GLOBAL)")
 
 # Lê o arquivo CSV
 df = pd.read_csv('PS4GamesSales.csv', encoding='latin1')
